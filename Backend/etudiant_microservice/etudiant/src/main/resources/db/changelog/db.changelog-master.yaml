@@ -1,0 +1,4 @@
+databaseChangeLog:
+name: db.changelog-master.yaml
+environment: testing
+is-enabled: false
