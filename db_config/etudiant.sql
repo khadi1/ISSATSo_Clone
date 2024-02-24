@@ -154,6 +154,8 @@ CREATE TABLE Document (
     titre VARCHAR(255),
     contenu TEXT,
     idCours INT,
+    path VARCHAR(255), 
+    date_de_creation DATETIME , 
     FOREIGN KEY (idCours) REFERENCES Cours(idCours)
 );
 
@@ -246,23 +248,23 @@ INSERT INTO Personne (id, nom, prenom, adresse, email, telephone , statue) VALUE
 
 -- Insertion des données dans la table Salle
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(501, 'Salle A1', 50);
+(501, 'Salle A1', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(502, 'Salle A2', 40);
+(502, 'Salle A2', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(503, 'Salle A3', 30);
+(503, 'Salle A3', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(504, 'Salle G1', 50);
+(504, 'Salle G1', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(505, 'Salle G2', 40);
+(505, 'Salle G2', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(506, 'Salle G3', 30);
+(506, 'Salle G3', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(507, 'Salle G4', 50);
+(507, 'Salle G4', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(508, 'Salle G5', 40);
+(508, 'Salle G5', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(509, 'Salle G6', 30);
+(509, 'Salle G6', 'TP');
 
 -- Insertion des données dans la table Matiere
 INSERT INTO Matiere (idMatiere, nomMatiere, description) VALUES
@@ -313,12 +315,12 @@ INSERT INTO Cours (idCours, idFiliere, idMatiere, semestre) VALUES
 (803, 201, 603, 'Sem1');
 
 -- Insertion des données dans la table Document
+INSERT INTO Document (idDocument, titre, contenu, idCours , path , date_de_creation) VALUES
+(901, 'Support Cours 1', 'Contenu du support de cours 1', 801 , "" , '2024-03-01 02:16:23' );
 INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(901, 'Support Cours 1', 'Contenu du support de cours 1', 801);
+(902, 'Support Cours 2', 'Contenu du support de cours 2', 802, "" , '2024-03-01 01:16:23' );
 INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(902, 'Support Cours 2', 'Contenu du support de cours 2', 802);
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(903, 'Support Cours 3', 'Contenu du support de cours 3', 803);
+(903, 'Support Cours 3', 'Contenu du support de cours 3', 803 , "" , '2024-03-01 00:16:23' );
 
 
 -- Insertion des données dans la table AffectationCoursEnseignant

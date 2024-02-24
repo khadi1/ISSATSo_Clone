@@ -158,6 +158,8 @@ CREATE TABLE Document (
     titre VARCHAR(255),
     contenu TEXT,
     idCours INT,
+    path VARCHAR(255), 
+    date_de_creation DATETIME , 
     FOREIGN KEY (idCours) REFERENCES Cours(idCours)
 );
 
@@ -259,23 +261,23 @@ INSERT INTO Personne (id, nom, prenom, adresse, email, telephone , statue) VALUE
 
 -- Insertion des données dans la table Salle
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(501, 'Salle A1', 50);
+(501, 'Salle A1', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(502, 'Salle A2', 40);
+(502, 'Salle A2', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(503, 'Salle A3', 30);
+(503, 'Salle A3', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(504, 'Salle G1', 50);
+(504, 'Salle G1', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(505, 'Salle G2', 40);
+(505, 'Salle G2', 'C');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(506, 'Salle G3', 30);
+(506, 'Salle G3', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(507, 'Salle G4', 50);
+(507, 'Salle G4', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(508, 'Salle G5', 40);
+(508, 'Salle G5', 'TP');
 INSERT INTO Salle (idSalle, nomSalle, type) VALUES
-(509, 'Salle G6', 30);
+(509, 'Salle G6', 'TP');
 
 -- Insertion des données dans la table Matiere
 INSERT INTO Matiere (idMatiere, nomMatiere, description) VALUES
