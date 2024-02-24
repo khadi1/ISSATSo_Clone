@@ -317,9 +317,9 @@ INSERT INTO Cours (idCours, idFiliere, idMatiere, semestre) VALUES
 -- Insertion des données dans la table Document
 INSERT INTO Document (idDocument, titre, contenu, idCours , path , date_de_creation) VALUES
 (901, 'Support Cours 1', 'Contenu du support de cours 1', 801 , "" , '2024-03-01 02:16:23' );
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
+INSERT INTO Document (idDocument, titre, contenu, idCours ,path , date_de_creation) VALUES
 (902, 'Support Cours 2', 'Contenu du support de cours 2', 802, "" , '2024-03-01 01:16:23' );
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
+INSERT INTO Document (idDocument, titre, contenu, idCours ,path , date_de_creation) VALUES
 (903, 'Support Cours 3', 'Contenu du support de cours 3', 803 , "" , '2024-03-01 00:16:23' );
 
 

@@ -328,12 +328,12 @@ INSERT INTO Cours (idCours, idFiliere, idMatiere, semestre) VALUES
 (803, 201, 603, 'Sem1');
 
 -- Insertion des données dans la table Document
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(901, 'Support Cours 1', 'Contenu du support de cours 1', 801);
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(902, 'Support Cours 2', 'Contenu du support de cours 2', 802);
-INSERT INTO Document (idDocument, titre, contenu, idCours) VALUES
-(903, 'Support Cours 3', 'Contenu du support de cours 3', 803);
+INSERT INTO Document (idDocument, titre, contenu, idCours , path , date_de_creation) VALUES
+(901, 'Support Cours 1', 'Contenu du support de cours 1', 801 , "" , '2024-03-01 02:16:23' );
+INSERT INTO Document (idDocument, titre, contenu, idCours ,path , date_de_creation) VALUES
+(902, 'Support Cours 2', 'Contenu du support de cours 2', 802, "" , '2024-03-01 01:16:23' );
+INSERT INTO Document (idDocument, titre, contenu, idCours ,path , date_de_creation) VALUES
+(903, 'Support Cours 3', 'Contenu du support de cours 3', 803 , "" , '2024-03-01 00:16:23' );
 
 -- Insertion des données dans la table Notes
 INSERT INTO Notes (idCours, note_document_path) VALUES
